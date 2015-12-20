@@ -3,12 +3,10 @@
 
 primitives Cube::type = primitives::CUBE;
 
-Cube::Cube(Point p1, Point p2, Point p3, Point p4) {
+Cube::Cube(Point* _vertices) {
 	vertices = new Point[CUBE_VERTICES];
-	vertices[0] = p1;
-	vertices[1] = p2;
-	vertices[2] = p3;
-	vertices[3] = p4;
+	for (int i = 0; i < CUBE_VERTICES; i++)
+		vertices[i] = _vertices[i];
 }
 
 Cube::~Cube() {
@@ -16,3 +14,5 @@ Cube::~Cube() {
 }
 
 primitives Cube::getType() { return type; }
+
+Point* Cube::getVertex(int index) { return &vertices[index]; }

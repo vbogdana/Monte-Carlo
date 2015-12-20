@@ -8,12 +8,15 @@ class Point;
 class Sphere : public Primitive {
 private:
 	static primitives type;
-	int r;
+	double r;
 	Point center;
 
 public:
-	Sphere(int, Point);
+	Sphere(double, Point);
+
 	primitives getType();
+	double getR();
+	Point* getCenter();
 
 };
 
