@@ -1,3 +1,5 @@
+#ifndef _MATERIAL_H_
+#define _MATERIAL_H_
 
 typedef enum Materials { REFLECTIVE, DIFFUSE, REFRACTIVE } materials;
 
@@ -7,4 +9,7 @@ private:
 
 public:
 	Material(materials _type);
+
 };
+
+#endif

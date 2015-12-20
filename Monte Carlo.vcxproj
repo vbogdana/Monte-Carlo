@@ -11,13 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Material.cpp" />
-    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Primitives.h" />
+    <ClInclude Include="Primitive.h" />
     <ClInclude Include="Material.h" />
-    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Sphere.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AB26C6FB-EE61-4FF1-A821-342F980725EB}</ProjectGuid>
