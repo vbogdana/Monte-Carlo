@@ -11,11 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="KDTree.cpp" />
+    <ClCompile Include="KDTreeNode.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="KDTree.h" />
+    <ClInclude Include="KDTreeNode.h" />
     <ClInclude Include="Primitive.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Sphere.h" />

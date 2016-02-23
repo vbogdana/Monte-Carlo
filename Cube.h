@@ -3,6 +3,8 @@
 
 #include "Primitive.h"
 
+#define CUBE_VERTICES 8
+
 class Point;
 
 class Cube : public Primitive {
@@ -11,11 +13,11 @@ private:
 	Point* vertices;
 
 public:
-	Cube(Point*);
+	Cube(Point*, Color, materials);
 	~Cube();
 
 	primitives getType();
-	Point* getVertex(int);
+	Point getVertex(int);
 
 };
 

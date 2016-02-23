@@ -9,20 +9,35 @@
 #define FAILURE false
 #define SUCCESS true
 
-class Point {
+class Vector {
 private:
 	double coord[DIMENSION];
 
 public:
-	Point() {}
-	Point(double, double, double);
+	Vector();
+	Vector(double, double, double);
 
 	double getX();
 	double getY();
 	double getZ();
-	double getCoord(int);
 
-	friend bool operator==(const Point&, const Point&);
+	double operator[](int);	
+	Vector operator+(const Vector&);
+	Vector operator-(const Vector&);
+	Vector operator*(const Vector&);
+	Vector operator*(const int);
+	bool operator==(const Vector&);
+};
+
+typedef Vector Point;
+
+class Color : public Vector {
+public:
+	Color(double, double, double);
+
+	double getRed();
+	double getGreen();
+	double getBlue();
 };
 
 #endif

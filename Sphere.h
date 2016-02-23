@@ -12,11 +12,10 @@ private:
 	Point center;
 
 public:
-	Sphere(double, Point);
-
+	Sphere(double, Point, Color, materials);
 	primitives getType();
 	double getR();
-	Point* getCenter();
+	Point getCenter();
 
 };
 
